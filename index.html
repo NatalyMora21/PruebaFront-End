@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+
+    <script src="https://kit.fontawesome.com/758a8f3741.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet">
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="cabecera">
+            <div>
+                <h1>To do list</h1>
+                <p>Viernes, 17 de Febre</p>
+            </div>
+            <div>
+                <img src="Imagenes/perfil.jpg" alt="">
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+        <h2>Tareas <span>(3 Asignadas)</span> </h2>
+        <div class="general">
+            <div class="subseccion">
+                <h3 class="activa">Activa</h3>
+                <button>Agregar tiempo</button>
+
+            </div>
+            <div class="horizontal"></div>
+            <div class="subseccion">
+                <div class="perfil1">
+
+                    <img src="Imagenes/perfil.jpg" alt="">
+                    <p>Juanita Perez</p>
+                </div>
+
+                <div class="perfil2">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <p>Tiempo restante:12 hrs</p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="subseccion">
+                <div class="vertical"></div>
+
+                <div class="tarea">
+                    <div class="subseccion">
+                        <h4>Título de la tarea</h4>
+                        <i class="fas fa-ellipsis-v" onclick="mostrar('options');"></i>
+                    </div>
+
+
+                    <div class="menu">
+
+
+                        <div id="options" class="optiong" style="display: none;">
+                            <i class="fas fa-eye"><span> Ver tareas</span></i>
+                            <br>
+                            <i class="far fa-trash-alt"><span> Borrar</span></i>
+
+                        </div>
+
+                    </div>
+                    <p>When you enter into Copy When you enter into Copy
+                        When you enter into Copy
+                        When you enter into Copy
+
+                    </p>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="general">
+            <div class="subseccion">
+                <h3 class="finalizada">Finalizada</h3>
+
+
+            </div>
+            <div class="horizontal"></div>
+            <div class="subseccion">
+                <div class="perfil1">
+
+                    <img src="Imagenes/perfil.jpg" alt="">
+                    <p>Juanita Perez</p>
+                </div>
+
+                <div class="perfil2">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <p>Tiempo restante:12 hrs</p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="subseccion">
+                <div class="vertical"></div>
+
+                <div class="tarea">
+                    <div class="subseccion">
+                        <h4>Título de la tarea</h4>
+                        <i class="fas fa-ellipsis-v" onclick="mostrar('options1');"></i>
+                    </div>
+                    <div class="menu">
+                        <div id="options1" class="optiong" style="display: none;">
+                            <i class="fas fa-eye"><span> Ver tareas</span></i>
+                            <br>
+                            <i class="far fa-trash-alt"><span> Borrar</span></i>
+
+                        </div>
+                    </div>
+                    <p>When you enter into Copy When you enter into Copy
+                        When you enter into Copy
+                        When you enter into Copy
+
+                    </p>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="general">
+            <div class="subseccion">
+                <h3 class="finalizada">Finalizada</h3>
+
+
+            </div>
+            <div class="horizontal"></div>
+            <div class="subseccion">
+                <div class="perfil1">
+
+                    <img src="Imagenes/perfil.jpg" alt="">
+                    <p>Juanita Perez</p>
+                </div>
+
+                <div class="perfil2">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <p>Tiempo restante:12 hrs</p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="subseccion">
+                <div class="vertical"></div>
+
+                <div class="tarea">
+                    <div class="subseccion">
+                        <h4>Título de la tarea</h4>
+                        <i class="fas fa-ellipsis-v" onclick="mostrar('options2');"></i>
+                    </div>
+                    <div class="menu">
+                        <div id="options2" class="optiong" style="display: none;">
+                            <i class="fas fa-eye"><span> Ver tareas</span></i>
+                            <br>
+                            <i class="far fa-trash-alt"><span> Borrar</span></i>
+
+                        </div>
+                    </div>
+                    <p>When you enter into Copy When you enter into Copy
+                        When you enter into Copy
+                        When you enter into Copy
+
+                    </p>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="general" id="FormCrear" style="display: none;">
+            <h2> <i class="fa fa-plus-square-o" aria-hidden="true"></i> Crear tarea </h2>
+
+            <div class="tareac">
+
+
+
+                <form action="">
+                    <label for="">Responsable: </label>
+                    <select name="" id="">
+                        <option value="">Juanita P.....</option>
+                        <option value="">Pepito P........</option>
+                        <option value="">... P.......</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="">Título:</label>
+                    <input type="text" name="" id="">
+                    <br>
+                    <br>
+                    <label for="">Descripción:</label>
+                    <br>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <br>
+                    <br>
+                    <button>Crear Tarea</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Modal Agregar Tarea-->
+
+
+
+
+
+    <div class="fixed" onclick="mostrar('FormCrear');">
+        <i class="fas fa-plus"></i>
+
+    </div>
+
+
+
+    <script src="Js/eventos.js"></script>
+
+</body>
+
+</html>
